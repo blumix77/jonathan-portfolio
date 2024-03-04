@@ -8,17 +8,26 @@ export const Header = () => {
     return (
         <div className="header">
             <h1>Jonathan Eibisch</h1>
-            <p>Politische Theorie | Dozent </p>
-           <BrowserRouter>
+            <p className='subtitle'>Politische Theorie | Dozent 
+            </p>
             <nav>
-                <div className="Links">
-                <NavLink to="/publications">Publikationen</NavLink>
-                <NavLink to="/teaching">Lehre</NavLink>
-                <NavLink to="/Bio">Biografie</NavLink>
-                <NavLink to="/contact">Kontakt</NavLink>
+            <BrowserRouter>
+                <div className="links">
+                    <div className="single-link">
+                        <NavLink to="/publications">Publikationen</NavLink>
+                    </div>
+                    <div className="single-link">
+                        <NavLink to="/teaching">Lehre</NavLink>
+                    </div>
+                    <div className='single-link'>
+                        <NavLink to="/Bio">Biografie</NavLink>
+                    </div>
+                    <div className="single-link">
+                        <NavLink to="/contact">Kontakt</NavLink>
+                    </div>
                 </div>
-            </nav>
             </BrowserRouter>
+            </nav>
         </div>
     )
 } 
